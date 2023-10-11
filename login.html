@@ -1,0 +1,70 @@
+<?php include('conexion.php'); ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+
+   
+
+    <!-- Incluye los estilos de Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+<div style="height:50px;background-color:#84272D">
+<body style="background-color:#84272D">
+    <div style="font-size: 60px; text-align: center;background-color:white">
+        <img src="Imagenes/SEDIF.png" style="height: 10%; width: 10%;">
+        <a >CORRESPONDENCIA SEDIF</a>
+        <img src="Imagenes/LOGO-ESTADO.png" style="height: 10%; width: 10%;">
+    </div>
+<div style="height:50px;background-color:#d9d9d9">
+</div>
+    <div >
+        <div class="row justify-content-center">
+            <div class="col-md-4 formulario" style="background-color:#d9d9d9;border-radius: 20px;margin:35px;
+            height:350px;width:350px">
+                <h2 class="text-center mb-4">Inicio de Sesión</h2>
+                <form class="row g-3 needs-validation" action="conexion.php" method="post">
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="usuario" name="usuario" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contrasena" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                    </div>
+                    <div class="d-grid">
+                        
+                        <button type="submit "  class="btn my-custom-btn " name="iniciar">Iniciar Sesión</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <!-- Incluye los archivos JavaScript de Bootstrap (jQuery es requerido) -->
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/jquery.js"></script>
+
+    <style>
+        .my-custom-btn{
+            background-color: #CB7169;
+            border-color: #8F3D38;
+            color: white;
+        }
+        .my-custom-btn:hover{
+            background-color: white;
+            border-color: #8F3D38;
+            color: #8F3D38;
+
+        }
+        .formulario{
+            border: #8F3D38;
+            border-color: #8F3D38;
+        }
+    </style>
+</body>
+
+   
